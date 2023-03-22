@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+</head>
+<body>
+    <header>
+        <h1>Fale com a devaria a partir desta página.</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="professores.html">Professores</a> </li>
+                <li><a href="faleConosco.html">Fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Para entrar em contato, preencha os campos abaixo e clique em enviar.</h2>
+        <form action="index.html"> <!--Para ser direcionado para a página inicial depois que enviar o formulário-->
+            <p>
+                <label>Nome:</label><input type="text" name="Nome" maxlength="70">
+            </p>    
+            <p>
+                <label>E-mail:</label><input type="text" name="Email" maxlength="150">
+            </p>   
+            <p>
+                <label>Comentários:</label>
+                <textarea name="Comenrários" cols="50" rows="4"></textarea>
+            </p>
+            <p>
+                <label>Sexo:</label>
+                <input type="radio" name="sexo"><label for="">Feminimo</label>
+                <input type="radio" name="sexo"><label>Masculino</label>
+            </p>
+        </form>
+    </main>
+    <footer>
+        <section>
+            <span>teste@devaria.com.br</span> <br>
+            <span>Conheça o nosso canal do youtube!</span>
+        </section>
+    </footer>    
+</body>
+</html>
