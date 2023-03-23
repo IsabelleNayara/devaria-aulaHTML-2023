@@ -1,1 +1,1 @@
-https://isabellenayara.github.io/devaria-aulaHTML-2023/index.html
+https://isabellenayara.github.io/devaria-aulaHTML-2023/

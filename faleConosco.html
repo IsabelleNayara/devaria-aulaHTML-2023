@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco</title>
 </head>
+
 <body>
     <header>
         <h1>Fale com a devaria a partir desta página.</h1>
@@ -14,6 +16,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="professores.html">Professores</a> </li>
                 <li><a href="faleConosco.html">Fale conosco</a></li>
+                <li><a href="devStars.html">DevStars</a></li>
             </ul>
         </nav>
     </header>
@@ -22,18 +25,40 @@
         <form action="index.html"> <!--Para ser direcionado para a página inicial depois que enviar o formulário-->
             <p>
                 <label>Nome:</label><input type="text" name="Nome" maxlength="70">
-            </p>    
+            </p>
             <p>
                 <label>E-mail:</label><input type="text" name="Email" maxlength="150">
-            </p>   
+            </p>
             <p>
                 <label>Comentários:</label>
                 <textarea name="Comenrários" cols="50" rows="4"></textarea>
             </p>
             <p>
-                <label>Sexo:</label>
-                <input type="radio" name="sexo"><label for="">Feminimo</label>
-                <input type="radio" name="sexo"><label>Masculino</label>
+                <label>Identidade de gênero:</label><!--Tirei do formulário de cadastro do SUS-->
+                <input type="radio" name="sexo"><label for="">Mulher CIS</label>
+                <input type="radio" name="sexo"><label>Homem CIS</label>
+                <input type="radio" name="sexo"><label for="">Mulher TRANS</label>
+                <input type="radio" name="sexo"><label>Homem TRANS</label>
+                <input type="radio" name="sexo"><label for="">Travesti</label>
+                <input type="radio" name="sexo"><label>Não binário</label>
+            </p>
+            <!--http://azt.aids.gov.br/documentos/siclom_operacional/NOVO_CADASTRO_USU%C3%81RIO_SUS22JANEIRO2023-1.pdf-->
+            <p>
+                <label>Aonde você conheceu o Devaria?</label>
+                <select name="Conheceu">
+                    <option selected>Google</option>
+                    <option>Amigos</option>
+                    <option>Youtube</option>
+                    <option>Outros</option>
+                </select>
+            </p>
+            <p>
+                <input type="checkbox" name="Aceite" value="Aceite">
+                <label>Aceitou receber novidades da Devaria.</label>
+            </p>
+            <p>
+                <input type="submit" name="Enviar" value="Enviar">
+                <input type="reset" name="Limpar" value="Limpar">
             </p>
         </form>
     </main>
@@ -42,6 +67,7 @@
             <span>teste@devaria.com.br</span> <br>
             <span>Conheça o nosso canal do youtube!</span>
         </section>
-    </footer>    
+    </footer>
 </body>
+
 </html>
