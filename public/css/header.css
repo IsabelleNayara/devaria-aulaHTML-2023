@@ -1,8 +1,9 @@
-/*Estilos do header*/
+/*Estilos do header*/ /*versão mobile*/
 
 header .link-logo {
     display: block;
     padding: 20px 25px;
+    border-bottom: 1px solid #25cbd3;
 }
 
 header nav ul {
@@ -12,11 +13,10 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    margin-right: 15px;
 }
 
-header nav ul li {
-    
+header nav ul li:not(:last-child) {
+    margin-right: 15px;       
 }
 
 .menu li a {
@@ -24,3 +24,22 @@ header nav ul li {
     text-decoration: none;
 }
 
+.menu li a:hover {
+    color: ##3b442d;
+    text-decoration: underline;    
+}
+
+/*Media query*/
+/*A tela qye vai ser adaptada é para tela do pc*/
+
+@media screen and (min-windth:992px) {
+    header {
+        position: relative;
+    }
+
+    .menu {
+        position:absolute;
+        right: 2%;
+        top: 18%;
+    }
+}
